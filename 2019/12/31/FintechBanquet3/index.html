@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>金融科技盛宴（三）：银行的云计算应用 | Hexo</title>
+  
+  
+  <meta name="description" content="这是系列文章之一。本系列梳理了国内外银行信息化历程，包含区块链、云计算、物联网、移动端、人工智能各方面的应用情况。">
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
+  
+
+  
+
+  
+    
+<link rel="stylesheet" href="/style.css">
+
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover post half'>
+      
+        
+  <h1 class='title'>Fjrcu-Tech</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;博文
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/projects/"
+            
+            
+            id="projects">
+            <i class='fas fa-code-branch fa-fw'></i>&nbsp;项目
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+              rel="nofollow"
+            
+            
+            id="friends">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header pure">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="pure"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          Hexo
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-grin fa-fw'></i>&nbsp;示例
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogcategories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogtags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/blog/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="blogarchives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/blog/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="blogarchives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/projects/"
+                
+                
+                id="projects">
+								<i class='fas fa-code-branch fa-fw'></i>&nbsp;开源项目
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="https://xaoxuu.com/wiki/material-x/"
+                
+                  rel="nofollow"
+                
+                
+                id="https:xaoxuu.comwikimaterial-x">
+								<i class='fas fa-book fa-fw'></i>&nbsp;主题文档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于小站
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2019/12/31/FintechBanquet3/">
+        金融科技盛宴（三）：银行的云计算应用
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p></p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-12-31</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+  
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <h2 id="一、云计算发展简介"><a href="#一、云计算发展简介" class="headerlink" title="一、云计算发展简介"></a>一、云计算发展简介</h2><p>&emsp;&emsp;1963年，DARPA（美国国防高级研究计划局）向麻省理工学院提供了约 200 万美元的津贴，启动了著名的 MAC 项目，要求麻省理工开发“多人可同时使用的电脑系统”技术。当时麻省理工就构想了“计算机公共事业”，即让计算成为像电力一样供应。这个项目产生了“云”和“虚拟化”技术的雏形。<br> &emsp;&emsp;然而，有趣的是，尽管思想萌芽出现的很早，但直到将近 40 年后的 2006 年，“云计算”这一术语才出现在商业领域，Google、亚马逊和 IBM 先后提出了云端应用。<br> &emsp;&emsp;Google 一开始是为了将大量廉价的服务器组合起来支持其庞大的搜索业务；亚马逊则是因为自建数据中心后，为了将多余的空间出租出去，而推出了 EC2 (Elastic Compute Cloud) 云服务；IBM 则是在从硬件制造商转型为企业级软硬件整体解决方案供应商的过程中，逐渐形成云服务能力，与 2007 年推出了 Blue Cloud 服务，但是最终，起步并不晚的 IBM 却错失了“云计算”的快车；2008 年，微软在其开发者大会上发布了 PaaS 云计算平台──Azure Service Platform。<br> &emsp;&emsp;我们今天理解的“云计算”实际上只有十二三年的时间，比区块链技术的历史略长，但是，这短短的十二三年时间，已经使“云计算”成为了可有效驾驭庞大计算资源的成熟技术，其发展速度不可谓不快。<br> &emsp;&emsp;时至今日，从服务类型上分，云服务可以分为 IaaS、PaaS 和 SaaS 三种类型，分别对应只提供基础设施、提供完整开发环境和提供成品云端软件三种服务方式；从部署模型上分，主要有公共云、社区云、私有云和混合云，公有云是第三方提供者拥有的可公共访问的云环境，社区云则仅供一组社区成员访问的云环境，私有云是仅供一个组织所拥有的云环境，混合云则是采用以上两种或多种部署模型组合部署的云环境。<br> &emsp;&emsp;国内云计算市场发展很快。国际数据公司 （IDC）发布的《中国公有云服务市场（2018 下半年）跟踪》报告显示， 2018 下半年中国公有云服务整体市场规模（IaaS/PaaS/SaaS）超 40 亿美金，其中 IaaS 市场增速再创新高，同比增长 88.4%，PaaS 市场增速更是高达 124.3%，增速远高于全球。相比 2014 年，2018 年中国公有云 IaaS 市场对全球的贡献份额已翻倍，达到 46.5 亿美元。2018 年，公有云市场后发厂商频频发力，华为、百度、浪潮、京东等均得力于其强大的研发和生态实力，实现了高达市场平均水平 2-8 倍的迅猛增长。<br> &emsp;&emsp;2019第一季度中国公有云服务整体市场规模（IaaS/PaaS/SaaS）达到 24.6 亿美金，同比增长 67.9%。其中，IaaS 市场增速有所减缓，同比增长 74.1%；PaaS 市场依然保持高增长，增速为 101.9%。<br> &emsp;&emsp;阿里、腾讯、中国电信、亚马逊（AWS）位居前四，总共占据 70.2% 的市场份额；金山、华为和百度市场规模接近，随着一季度华为和百度 IaaS 业务的快速增长，三家厂商均录得了第五位（5.2%）的市场份额。</p>
+<h2 id="二、国外银行的云计算应用"><a href="#二、国外银行的云计算应用" class="headerlink" title="二、国外银行的云计算应用"></a>二、国外银行的云计算应用</h2><h3 id="（一）荷兰国际集团（简称-ING）"><a href="#（一）荷兰国际集团（简称-ING）" class="headerlink" title="（一）荷兰国际集团（简称 ING）"></a>（一）荷兰国际集团（简称 ING）</h3><p> &emsp;&emsp; ING 是由荷兰最大保险公司 (Nationale-netherlanden) 与荷兰最大的邮政银行 (NBM) 合并而成，已有 155 年历史。<br> &emsp;&emsp;2008 年，该银行认为自己的数据中心管理方式已经过时而且低效，成本远高于市场平均水平，于是，启动了云计算项目。在第一阶段，该银行废除了 13 家数据中心，对 6000 多台服务器和 350 多个应用进行了虚拟化。2011 年初，该银行建成了连接 6 个数据中心的私有云。其后，进一步投资了混合云技术。2015 年，在云化基础上，该银行进一步升级了其持续交付基础设施，为全行转型敏捷开发、DevOps 模式奠定了基础。目前，该银行已经成为整体敏捷转型实践的范例。</p>
+<h3 id="（二）德意志银行"><a href="#（二）德意志银行" class="headerlink" title="（二）德意志银行"></a>（二）德意志银行</h3><p> &emsp;&emsp;2015 年 2 月，HPE 与全球最大的老牌银行之一德意志银行达成合作，签署的长达十年的云计算项目，部署一系列的私有云和公有云解决方案，这将作为这家银行长期 IT 转型的一个重要步骤。<br> &emsp;&emsp;德意志银行正在执行一个长达 10 年的长期 IT 转型战略，这一战略的命名是：Project Nucleus——战略转型“核战略”。顾名思义，德意志银行对这一战略寄予极高的期望，总预算高达数十亿美元，目标是将德意志银行的全球 IT 环境进行升级换代，从而实现 IT 基础架构的成本降低，德意志银行的 IT 部门将从成本中心转变为运营中心。<br> &emsp;&emsp;HPE 主要为德意志银行的批发银行业务的 IT 架构提供私有云产品和解决方案，其中包括存储、平台、和托管业务。HPE 托管私有云整体解决方案将入驻德意志银行全球约 20 个数据中心，包含按需计算资源、定价策略等，这也将改变德意志银行的运行机制。</p>
+<h3 id="（三）西班牙对外银行（简称-BBVA）"><a href="#（三）西班牙对外银行（简称-BBVA）" class="headerlink" title="（三）西班牙对外银行（简称 BBVA）"></a>（三）西班牙对外银行（简称 BBVA）</h3><p> &emsp;&emsp;BBVA 较早采用了谷歌通过的云方案，以提高生产效率，在 2012 年底，其分布在全球 26 个国家或地区的超过 11 万名员工已经通过云服务进行协作与沟通。2016 年 BBVA 分别与 Red Hat、Amazon Web Services 合作，着力提升其云平台管理、云部署、云计算能力，并搭建云基础架构与创建云社区。</p>
+<h2 id="三、国内银行的云计算应用"><a href="#三、国内银行的云计算应用" class="headerlink" title="三、国内银行的云计算应用"></a>三、国内银行的云计算应用</h2><h3 id="（一）建行"><a href="#（一）建行" class="headerlink" title="（一）建行"></a>（一）建行</h3><p> &emsp;&emsp;2012 年开始，建行率先进行了尝试，成为国内第一家在生产数据中心大规模应用私有云的商业银行。当年，建行成立了云平台规划组，对云计算技术进行研究。2013 年 8 月建行私有云平台项目成功上线，有效地支持了新一代核心系统长达六年的建设和投产历程。该项目也荣获了 2013 年度银监会“银行业信息科技风险管理课题研究”一等奖、“2013 年中国金融信息化年度十件大事”以及“IDC2014 年度中国金融行业最佳（唯一）创新大奖”。<br> &emsp;&emsp;建设银行云管理平台参考了开源项目 OpenStack 的架构设计，并根据商业银行数据中心运维的特点进行了适当的扩展，主要增加了和运维有关的日常检查、软件分发、配置管理和服务启停等功能模块。在技术架构方面，主要由用户门户、服务管理、流程引擎、消息总线和资源适配五部分组成。实践过程中，建行对大量产品进行了抽象化和标准化的工作。<br> &emsp;&emsp;随着建行对“金融科技”战略的推进，基于私有云的成功运行经验，对外科技输出的范围不断加大。2018 年下半年，建行开始对同业提供建行云服务，产品丰富多样，涉及计算、存储、网络、数据库等基础服务，还包括行业应用、银行业务等多种解决方案。</p>
+<h3 id="（二）工行"><a href="#（二）工行" class="headerlink" title="（二）工行"></a>（二）工行</h3><p> &emsp;&emsp; 云计算实施一般会经历从数据大集中到资源虚拟化再到云计算的路径。工行 1999 年完成了数据大集中，2008 年开始部署服务器虚拟化，2014 年启动云计算的研究工作。<br> &emsp;&emsp;工行基础设施云 IaaS 是基于开放的 OpenStack、SDN 之上，自主研发云管平台，实现了计算、存储、网络资源的供应，与应用平台云 PaaS、流程管理等系统的联动以及资源的可视化管理。应用平台云 PaaS 则采用轻量级容器技术，引入业界主流的容器集群编排及调度技术 Kubernetes。<br> &emsp;&emsp;截至 2017 年 12 月，基础设施云 IaaS 实现了研发云、测试云和生产云的部署，完成个人网银、企业网银等 11 个重点应用 3800 多个节点入云实施；应用平台云 PaaS 落地应用超过 40 个，云上服务调用量日均超过 5 亿笔，主要涉及互联网金融、合作方、物联网和主机业务下移等相关场景。针对以互联网金融接入带来的业务突发高峰场景，云平台的弹性扩展和高可用能力支撑了工行 2016～2017 年的纪念币预约、春节红包、“双 11”大促等互联网高并发场景，在生产经历了上万 TPS 的瞬时高峰考验。</p>
+<h3 id="（三）中行"><a href="#（三）中行" class="headerlink" title="（三）中行"></a>（三）中行</h3><p> &emsp;&emsp; 中行在 2018 年 8 月 9 日银行业例行新闻发布会上介绍了该行“加快金融科技创新，全面推动数字化转型”的相关情况。中行首席信息官刘秋万表示，2018 年，中行将完成云计算平台、大数据平台、人工智能平台等三大技术平台建设，全面推动技术架构由集中式架构向分布式架构转型，为数字化发展提供有力的技术支撑。<br> &emsp;&emsp;在云计算平台方面，私有云平台一期于 2018 年三季度完成部署实施。先后完成微信银行等 41 个分布式应用系统建设与改造工作。同步推进主机查询类交易下移和小型机平台应用迁移工作，累计实现下移 MIPS 28000 左右，占全部核心系统交易比例 58% 以上，已完成 17 个应用系统由小型机平台迁移至 X86 平台。</p>
+<h3 id="（四）中国邮政储蓄银行"><a href="#（四）中国邮政储蓄银行" class="headerlink" title="（四）中国邮政储蓄银行"></a>（四）中国邮政储蓄银行</h3><p> &emsp;&emsp;2018 年 8 月 24 日，在金科创新社和 IBM 联合举办的 2018 新一代金融云平台沙龙上，中国邮政储蓄银行（以下简称“邮储银行”）数据中心高级工程师穆冬生先生介绍了邮储银行的云计算应用情况。<br> &emsp;&emsp;邮储银行是从 2014 年底开始尝试云计算技术，首先在广州的一个消费公司示范；2016 年通过四大类的开发测试项目和电子渠道的项目，夯实了云技术平台的架构体系，并将手机银行迁移到云；2017 年在云上部署大数据相关应用；2018 年开始进行是负债和资产等核心业务系统上云。云上的整体交易量在行内业务中的占比达到约 60%。<br> &emsp;&emsp;邮储银行云架构是基于 Mirantis OpenStack 的私有云，中间层也在不断尝试容器化推送。</p>
+<h3 id="（五）平安"><a href="#（五）平安" class="headerlink" title="（五）平安"></a>（五）平安</h3><p>&emsp;&emsp;平安科技从 2013 年年底开始筹备云平台建设，并从 2014 年逐步构建平台和应用试点。<br> &emsp;&emsp;在架构上，平安云先是采用公有云的服务设计和架构方式来做私有云，比如在设计之初就实现多租户，平安内部有很多的专业公司，专业公司下面还有不同部门和项目组，这些基层组织在云上都是租户。此外，还采用了 VPC（虚拟私有云）的方式，把租户和租户之间通过网络进行隔离开。这种架构设计使平安云比较顺利地实现了后续向公有云方向的发展。<br> &emsp;&emsp;在底层技术框架上，平安最开始用的是 CloudStack，在使用过程中也融入了一些 OpenStack 的模块，相当于把 CloudStack 和 OpenStack 的相应模块整合在一起。在五年多的持续使用过程中，逐渐构建起平安自己的 PAStack（也叫做平安 Stack），形成了平安自己的一套框架。平安云从 14 年底 开始尝试容器技术，提出了 CaaS 设计理念，目前应用重点仍放在 Kubernetes 上。<br> &emsp;&emsp;2015 年底，平安私有云搭建完成；2016 年初，平安提出平安云要从对内服务转变为对外服务，要做最专业的金融公有云；2017 年年中，平安正式对外发布了平安公有云；2017 年底平安集团的又进行了新的业务战略调整，在金融行业之外，增加了医疗和智慧城市两个方向。<br> &emsp;&emsp;平安云逐渐从私有云演变成行业云，由于其服务的行业均为强监管行业，因此在云平台构建上应用了很多隔离技术，使整个云平台可以支撑不同的行业。为了应对政府对数据安全性的高要求，采用了不同的管理方式，托管和专区都有，以满足不同行业对数据安全性上的各种特殊要求。<br> &emsp;&emsp;国内大型银行多采用在原有数据中心的基础上，从私有云做起、自建平台的云计算实施路径，中小型银行中虽然也有少部分银行自建平台，如江苏银行（2017 年 6 月 26 日投产）、中原银行（2018 年 9 月 29 日招标），但大多数银行难以负担高昂的数据中心建设成本，其中少数行采用采购云服务的方式实现业务上云。</p>
+<h2 id="四、关于对银行云计算应用的思考"><a href="#四、关于对银行云计算应用的思考" class="headerlink" title="四、关于对银行云计算应用的思考"></a>四、关于对银行云计算应用的思考</h2><p> &emsp;&emsp;国内外大型商业银行在云计算方面都是从原有的数据中心经过技术改造转型为云架构，也多是采用私有云建设方案，尤其是国内大型银行。目前随着公有云技术的发展，也有越来越多的银行在考虑公有云、混合云方案。但是云计算目前依然存在以下两个“恼人”的问题：</p>
+<h3 id="（一）稳定性"><a href="#（一）稳定性" class="headerlink" title="（一）稳定性"></a>（一）稳定性</h3><p> &emsp;&emsp;金融级应用最核心的诉求就是稳定性。目前公有云的头部科技企业虽然技术发达，但是中断依然时有发生，仅 2019 年，截止 8 月份已经有多个“巨头”出现宕机故障。<br> &emsp;&emsp;国外方面。2019 年 5 月 2 日，由于 DNS 配置事故，微软的 Azure 云在全球范围内震荡不定，平台范围的中断已经破坏了世界各地的各种 Redmond 托管系统，故障修复时间大约为 3 小时；6 月 3 日，美国东部发生网络拥堵，影响到 Google 云计算服务、G Suite(在线邮件以及企业生产力套件) 服务、YouTube（国外版优酷）网站服务，根据 Google 的报告，宕机事故始于美国太平洋时间 6 月 2 日 12:25，到下午 4 点服务全部恢复；6 月 19 日，IBM 的 Icloud 出现大约 1 小时的较大范围中断，包括美国东海岸、欧洲、澳洲等地区受到影响，导致门户和 API 不可用；日本亚马逊 AMAZON AWS 云端伺服器 8 月 23 日中午开始出现大规模异常，许多使用相关服务的日本手机游戏纷纷出现连线异常状态的 lag 或是读取时间过长，部分游戏甚至完全无法进行游玩，影响用户上百万用户的使用。<br> &emsp;&emsp;国内方面。2019 年 3 月 3 日，阿里云出现宕机故障，事故持续了 3 个小时左右，事后观察了 2 个小时，这不是阿里云首次出现宕机故障；3 月 23 日 16 时左右，腾讯服务器发生了大规模宕机，有网友发微博称旗下《王者荣耀》、《刺激战场》等多款热门游戏和网络服务产品“集体阵亡”，据称故障原因为光缆被挖断，故障恢复时间为 3 小时左右；7 月 24 日，腾讯云广东区域部分用户出现资源访问失败、控制台登录异常等情况，经排查，确定该故障是因腾讯云广州一区的主备两条运营商网络链路同时中断所导致，故障造成服务中断 4 小时。<br> &emsp;&emsp;尽管“巨头”在调流分流、弹性伸缩方面都“身怀绝技”，但是仍难免出现这些问题。上述级别的故障对于金融企业而言是难以接受的，尤其是国内人民银行对信息安全事件分类和报告制度有着非常严格的规定，出现问题的金融机构会面临严厉的监管问责。<br> &emsp;&emsp;目前除了中小银行只能通过公有云方式实现“上云”外，一些大型银行也在对同业金融机构提供公有云服务，因此，需要时刻注意云的稳定性问题，可用性无论达到多少个“9”，故障率依然不会是“0”，必须做好应急预案以保证业务连续性。</p>
+<h2 id="（二）安全性"><a href="#（二）安全性" class="headerlink" title="（二）安全性"></a>（二）安全性</h2><p> &emsp;&emsp;金融级应用无法忽视安全性，尤其是数据安全。近年来，针对云服务器进行攻击而导致的数据泄露事件依然时有发生。</p>
+<ul>
+<li><ol>
+<li>Equifax 数据泄露事件<br>&emsp;&emsp;2017 年 7 月 29 日，美国最大征信机构 Equifax 发生数据泄露事件，波及约 1.43 亿美国用户，泄露数据包括驾照号、社保号、出生日期和地址。黑客通过利用广泛使用的开源 Web 服务器软件 Apache Struts 中的漏洞，盗窃了 Equifax 系统中的数据。Equifax 总共犯了 34 个控制与过程错误导致数据泄露。可能只需其中 5 个控制措施和过程做对了就能避免这场数据泄露。其他 29 个左右可以尽早检测到数据泄露情况，留出时间加以阻止。<br>&emsp;&emsp;Apache Struts 在“财富 100 强”企业中应用广泛，但该事件发生后，尽管该漏洞已被广泛宣传，开源自动化公司 Sonatype 提供的数据显示，只有五分之一的公司不再使用该软件的易受攻击版本，大量的用户仍然没有将软件升级或者安装补丁文件。<br>&emsp;&emsp;2019 年 7 月 22 日，Equifax 宣布接受金额创纪录的和解协议，了结了这桩最终导致 1.5 亿人个人信息及财务记录暴露的大规模数据泄露事件。Equifax 需支付至少 13.8 亿美元的消费者索赔金。受泄露事件影响的消费者可得到现金补偿、信用监视和身份恢复帮助，所需资金由该公司投注的 3.805 亿非复归基金支出。协议还要求 Equifax 另外支付 1.25 亿美元的现金赔偿，且如果报名信用监视的人数超过 700 万，该公司需支付的数额还将大幅增加。<br>&emsp;&emsp;此外，Equifax 还需支付 1.75 亿美元的罚款以平息州检察官的调查，美国消费者金融保护局和联邦贸易委员会 (FTC) 的调查也需 1 亿美元平复。<br>&emsp;&emsp;最后，未来五年内，Equifax 还必须拿出 10 亿美元改善其数据安全。而且，这还是在 Equifax 自事件发生后已在安全及技术方面投入 12.5 亿美元的基础上。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>第一资本银行 (Capital One) 数据泄露事件<br>&emsp;&emsp;2019 年 7 月 29 日，据美国媒体报道，Capital One 当天发布声明称数据库遭黑客攻击，约 1.06 亿银行卡用户及申请人信息泄露。遭到泄露的数据主要是 2005 年至 2019 年初期间，个人客户以及小型企业在申请信用卡时提交的各项信息，其中包括约 14 万个社会安全号码和约 8 万个银行账户号码，以及一部分用户的信用评分和交易记录。<br>&emsp;&emsp;犯罪嫌疑人名为佩奇·汤姆森 (Paige Thompson)，曾经在亚马逊公司担任网络服务工程师。美国检方称，汤姆森利用 Capital One 系统防火墙的漏洞，通过攻击该银行租借的云计算服务器进入数据库。据 CNN 报道，汤姆森曾在美国代码存放网站和开源社区 Github 上放出她窃取的数据。据《华尔街日报》称，此次泄漏事件可能给该银行带来 1 亿至 1.5 亿美元的损失。</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>富国银行数据中心因出现故障导致宕机<br>&emsp;&emsp;太平洋时间 2019 年 2 月 8 日早上 6 点左右开始，美国第四大银行 Wells Fargo 的在线门户网站及移动应用软件已完全无法使用，报道称富国银行的银行卡被众多收银机和商店拒绝。该银行在一份声明中表示：“我们遇到了系统问题，原因是我们的一个数据中心出现了电源关闭，在日常维护后检测到烟雾后启动了断电机制。我们正在努力尽快恢复服务。我们对于给您带来的不便深表歉意”。<br>&emsp;&emsp;灭火系统往往会对数据中心的机器、尤其是硬盘驱动器造成相当大的破坏。恢复电源并消除灭火系统的影响可能需要一段时间。故障出现后，云计算服务随之瘫痪，富国银行在美国全境出现持续了数小时的大规模宕机。由于缺乏更进一步的信息，该事件如何引发了连锁反应，影响了这家银行面向互联网的整套基础设施尚不得而知。</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>2019 年发生的其他产生较大影响的泄漏事件<br>&emsp;&emsp;安全研究专家特洛伊·亨特 ( Troy Hunt ) 在博客中称，在云存储服务平台 MEGA 上，被黑客公开了窃取的 7.73 亿个电子邮件地址和近 2200 万个密码，这些文件一共超过 1.2 万份，数据超过 87 GB；因服务器出现安全漏洞，IT 安全和云数据管理巨头 Rubrik 的数据库遭到泄露，该数据库存储了近 10GB 的数据，包括每个客户的姓名和联系方式等；一位名为 Andrew 的黑客在 Pastebin 网站上叫卖领英网站 1 亿 5900 万用户的敏感数据，为了表示数据的真实性，该黑客已放出 100 名用户的登录凭证，其中甚至包括知名 CEO 的登录数据；荷兰非盈利机构 GDI 基金会研究人员发现，位于深圳的某人脸识别公司发生大规模数据泄露事件，超过 250 万用户的 680 多万条信息记录被泄露，泄露数据包括身份证信息、人脸识别图像、24 小时内的位置记录等敏感信息。</li>
+</ol>
+</li>
+<li><ol start="5">
+<li>国内云平台安全形势依然严峻<br>&emsp;&emsp;据新华社报道，国家互联网应急中心 2019 年 8 月 13 日发布的《2019 年上半年我国互联网网络安全态势》显示，2019 年上半年，发生在我国云平台上的网络安全事件或威胁情况相比 2018 年进一步加剧。<br>&emsp;&emsp;根据国家互联网应急中心监测数据，发生在我国主流云平台上的各类网络安全事件数量占比仍然较高，其中云平台上遭受分布式拒绝服务攻击（DDoS 攻击）次数占境内目标被攻击次数的 69.6%，被植入后门链接数量占境内全部被植入后门链接数量的 63.1%，被篡改网页数量占境内被篡改网页数量的 62.5%。<br>&emsp;&emsp;报告指出，攻击者经常利用我国云平台发起网络攻击，其中利用云平台发起对我国境内目标的 DDoS 攻击次数占监测发现的 DDoS 攻击总次数的 78.8%，发起对境内目标 DDoS 攻击的 IP 地址中来自我国境内云平台的 IP 地址占 72.4%，承载的恶意程序种类数量占境内互联网上承载的恶意程序种类数量的 71.2%，木马和僵尸网络恶意程序控制端 IP 地址数量占境内全部恶意程序控制端 IP 地址数量的 84.6%。<br>&emsp;&emsp;稳定性和安全性对金融级应用非常重要，一旦发生问题，对金融机构而言影响极大。当然，上述例子并非是要银行因噎废食，而是银行在云计算方面依然需要不断提升技术能力。总所周知，即便是大型银行，其场景并发量当前仍比互联网科技公司低至少一个数量级，所以在云计算的基础技术领域比后者还是稍差一些。当银行不断寻求云上业务规模的拓展时，也必须注意到规模产生的复杂度，无论是在调流限流、降级、弹性伸缩、多活等技术上，都需要不断加强。安全性则始终是一个“道高一尺魔高一丈”的循环过程，私有云安全保护程度相对还是要高于公有云，而希望提供公有云服务的银行，需要格外注意加强安全管理。</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>参考资料：<br>1.《云计算定义、发展史及三个层次详解》，网优雇佣军，2017-12-02，电子发烧友网。<br>2.《云计算概念、技术与架构》，Thomas Erl、Zaigham Mahmood、Riccardo Putttini，2017 年 7 月，机械工业出版社。<br>3.《金融服务业的云计算》，2019-06，伯纳多·尼克莱蒂著，陈冰翻译，经济管理出版社。<br>4.《HPE Helion 云计算成为德意志银行数字化转型的核心力量》，2015-11-03，huipuyunxitong 的博客。该博客文章部分内容引自著名研究机构 451Research 发布的研究报告《HP cloud is at the center of Deutsche Bank’s digital transformation》，原文作者：451Research 分析师 William Fellows。<br>5.《金融服务业的云计算》，2019-06，伯纳多·尼克莱蒂著，陈冰翻译，经济管理出版社。<br>6.《开放银行：国际范式与中国实践》，2019-06-14，杨望、王姝妤，瀚德金融科技研究院。<br>7.《云计算技术研究——中国建设银行私有云探索与实践》，2017-12-28，全国金融标准化技术委员会。<br>8.《工商银行金融云如何助推工行“智慧银行”建设》，2018-05-16，中国工商银行软件开发中心副总经理 王雍，金融咨询网。<br>9. 中国银行：2018 年将完成云计算、大数据三大技术平台建设》，2018-08-09，胡爱善，中国网财经。<br>10.《Equifax 的问题出在哪里：34 项控制与过程失误》，2018-12-07，安全牛。<br>11.《Equifax 数据泄露一年后，500 强公司仍然在使用相同有缺陷的软件》，2018-05-11，企鹅号：过去未来现在化。<br>12.《亿级美元已是常态：迄今为止损失最大的数据泄露盘点》，2019-08-11，安全牛。<br>13.《美国第一资本银行数据库遭黑客攻击 超 1 亿用户信息泄露》，2019-07-30，中国新闻网。<br>14.《富国银行眼下乱成一团糟：数据中心被烟雾笼罩，银行网站和应用软件宕机》，2019-02-08，云头条。<br>15.《2019 上半年度重大数据泄露事件盘点》，2019-07-15，骇极安全。</p>
+</blockquote>
+
+      </div>
+      
+      
+        <br>
+        
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-12-31T15:15:25+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>updated at Dec 31, 2019</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/12/31/FintechBanquet3/&title=金融科技盛宴（三）：银行的云计算应用 | Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/12/31/FintechBanquet3/&title=金融科技盛宴（三）：银行的云计算应用 | Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/12/31/FintechBanquet3/&title=金融科技盛宴（三）：银行的云计算应用 | Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+      
+      
+          <div class="prev-next">
+              
+                  <section class="prev">
+                      <span class="art-item-left">
+                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
+                          <h4>
+                              <a href="/2019/12/31/FintechBanquet4/" rel="prev" title="金融科技盛宴（四）：银行的移动端应用">
+                                
+                                    金融科技盛宴（四）：银行的移动端应用
+                                
+                              </a>
+                          </h4>
+                          
+                      </span>
+                  </section>
+              
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/2019/12/31/FintechBanquet2/" rel="prev" title="金融科技盛宴（二）：银行的区块链应用">
+                                  
+                                      金融科技盛宴（二）：银行的区块链应用
+                                  
+                              </a>
+                          </h4>
+                          
+                      </span>
+                  </section>
+              
+          </div>
+      
+    </section>
+  </article>
+
+
+
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '金融科技盛宴（三）：银行的云计算应用',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+      
+        
+          
+          
+            
+              <section class='widget author'>
+  <div class='content pure'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://wx3.sinaimg.cn/mw690/8926cc65gy1gaf50r8oh6j209b08adhx.jpg'/>
+      </div>
+    
+    
+      <div class='text'>
+        
+        
+        
+        
+      </div>
+    
+    
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;TOC</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、云计算发展简介"><span class="toc-text">一、云计算发展简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、国外银行的云计算应用"><span class="toc-text">二、国外银行的云计算应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（一）荷兰国际集团（简称-ING）"><span class="toc-text">（一）荷兰国际集团（简称 ING）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（二）德意志银行"><span class="toc-text">（二）德意志银行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（三）西班牙对外银行（简称-BBVA）"><span class="toc-text">（三）西班牙对外银行（简称 BBVA）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、国内银行的云计算应用"><span class="toc-text">三、国内银行的云计算应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（一）建行"><span class="toc-text">（一）建行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（二）工行"><span class="toc-text">（二）工行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（三）中行"><span class="toc-text">（三）中行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（四）中国邮政储蓄银行"><span class="toc-text">（四）中国邮政储蓄银行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（五）平安"><span class="toc-text">（五）平安</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、关于对银行云计算应用的思考"><span class="toc-text">四、关于对银行云计算应用的思考</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（一）稳定性"><span class="toc-text">（一）稳定性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#（二）安全性"><span class="toc-text">（二）安全性</span></a></li></ol>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget grid'>
+  
+<header class='pure'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content pure'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/blog/archives/" href="/blog/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="blogarchives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/projects/" href="/projects/"
+          
+          
+          id="projects">
+          
+            <i class="fas fa-code-branch fa-fw" aria-hidden="true"></i>
+          
+          开源项目
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/" href="https://xaoxuu.com/wiki/material-x/"
+          
+            rel="nofollow"
+          
+          
+          id="https:xaoxuu.comwikimaterial-x">
+          
+            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
+          
+          主题文档
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于小站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+
+            
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="mailto:me@xaoxuu.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://github.com/xaoxuu"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=63035382"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  <br>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+</div>
+  <div>
+    Use
+    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
+    as theme
+    
+      , 
+      total visits
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      times
+    
+    . 
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
