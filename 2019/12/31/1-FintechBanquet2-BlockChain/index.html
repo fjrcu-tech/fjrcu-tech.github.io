@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>金融科技盛宴（二）：银行的区块链应用 | Fjrcu-Tech</title>
+  
+  
+  <meta name="description" content="2019年6月18日，Facebook发布消息称计划发行一种名为“Libra”的稳定币，通过Libra为全球超过十亿人提供普惠金融服务，Libra让已经略感平静的区块链湖面顿时活跃。从比特币到Libra，区块链技术走过了一个十年的轮回，从金融出发再回到金融。虽然目前Libra前途尚无定论，但是，它已经让全世界广泛、一致地深度思考了区块链技术对金融行业的改变能力。Libra是对区块链技术经典目标的回归，而且非常强势。">
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css">
+  
+
+  
+
+  
+    
+<link rel="stylesheet" href="/style.css">
+
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover post half'>
+      
+        
+  <h1 class='title'>Fjrcu-Tech</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-rss fa-fw'></i>&nbsp;首页
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header pure">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="pure"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          Fjrcu-Tech
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-grin fa-fw'></i>&nbsp;示例
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="tags">
+									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于小站
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2019/12/31/1-FintechBanquet2-BlockChain/">
+        金融科技盛宴（二）：银行的区块链应用
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="/" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p></p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-12-31</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/%E6%A1%88%E4%BE%8B/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>案例</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+  
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <blockquote>
+<p>转载至： <a href="https://www.infoq.cn/article/CYUvDW6UM7FFpPHbbqPN" target="_blank" rel="noopener">InfoQ</a></p>
+</blockquote>
+<p>&emsp;&emsp;2019年6月18日，Facebook 发布消息称计划发行一种名为“Libra”的稳定币，通过 Libra 为全球超过十亿人提供普惠金融服务，Libra 让已经略感平静的区块链湖面顿时活跃。从比特币到 Libra，区块链技术走过了一个十年的轮回，从金融出发再回到金融。虽然目前 Libra 前途尚无定论，但是，它已经让全世界广泛、一致地深度思考了区块链技术对金融行业的改变能力。Libra 是对区块链技术经典目标的回归，而且非常强势。<br>&emsp;&emsp;《环球时报》英文版针对 Libra 发表的评论文章指出“全球数字货币竞争时代，中国不能缺席”，“随着全球数字经济竞争时代的到来，中国产业和监管机构都有必要就数字货币进行更多对话，理解甚至是鼓励数字货币。否则，中国有可能会在新的金融格局中落后”。<br>&emsp;&emsp;人民银行2019年8月2日召开的工作会议中，也明确提出要加快我国法定数字货币的研究步伐。2019年9月，国务院发布的《关于支持深圳建设中国特色社会主义先行示范区的意见》中也指出，“支持深圳开展数字货币研究与移动支付等创新应用”。<br>&emsp;&emsp;那么在区块链走过的这十年中，银行到底用的怎么样呢？我们一起来看些国内外银行的实际用例吧。</p>
+<h2 id="一、国外银行的区块链应用"><a href="#一、国外银行的区块链应用" class="headerlink" title="一、国外银行的区块链应用"></a>一、国外银行的区块链应用</h2><p> &emsp;&emsp;国外银行中，在区块链技术方面的领军者应当非摩根大通莫属。摩根大通较早入局区块链领域，其主持研发的 Quorum 平台是企业以太坊联盟（EEA）公认的技术代表。在 Quorum 的基础上，摩根大通 2017 年 10 月推出了 IIN（Interbank Information Network）平台，实现跨行信息交互，目标直指 SWIFT。摩根大通、加拿大皇家银行、澳大利亚 ANZ 银行、新西兰银行等相继加入该平台，到 2019 年上半年，已经有超过 200 家银行宣布加入 IIN，IIN 计划于 2019 年三季度启动。<br> &emsp;&emsp;2019 年 2 月，据 CNBC 报道，摩根大通将在几个月内启动测试，以推出加密货币 JPM Coin，其机制为挂钩美元的稳定币。计划面向经过监管审查的大机构客户发行，用于实现批发支付业务客户之间的实时交易结算。理论上可以与 IIN 结合完成跨境支付。摩根大通是美国首个计划发行虚拟货币的大型商业银行。<br> &emsp;&emsp;2019 年 5 月 27 日，韩国历史最悠久的银行——新韩银行推出了一个支持区块链的贷款平台，该系统旨在提高带流程的时间效率。作为韩国第二大银行，该行一致在积极采用区块链技术，此前，还曾实施了基于区块链的利率掉期交易。<br> &emsp;&emsp;2019 年 6 月，据金融科技新闻媒体 Finextra 报道称，意大利银行业协会（ABI）宣布将部署区块链技术，并从 2020 年 3 月开始采用区块链技术进行银行间对账。此举是 Spunta（意为“检查”）项目的一部分，旨在提高银行同业之间沟通的透明度和效率。2018 年 10 月，该项目完成首轮测试，验证了区块链和智能合约的应用，最近一轮测试于 2019 年 2 月顺利完成。同月，意大利众议院批准了一项定义 DLT 和区块链的法案，明确智能合约必须遵守的技术标准。<br> &emsp;&emsp;2019 年 6 月 18 日，汇丰银行公告称其已在印度企业客户的应收账款基础设施中采用了代币化技术。汇丰银行的数字应收账款工具（HSBC DART）是基于一家澳大利亚区块链金融科技公司的代币化技术开发的。汇丰银行曾在报告中称，在外汇交易中实施区块链技术可为其降低 25% 的运营成本。<br> &emsp;&emsp;2019 年 7 月底，菲律宾国内的大型商业银行——菲律宾联合银行推出了名为 PHX 的基于区块链技术的稳定币，挂钩该国法定货币“比索”，以该行储备为后盾，专注于支付业务，其最终目标是支持菲律宾中央银行所倡导的“数位普惠金融（Digital Financial Inclusion）”。该行目前与新加坡第二大银行华侨银行达成了合作，将代币化的法定货币，从新加坡汇到位于菲律宾南苏里高的坎蒂兰银行，成功实现了菲律宾运用区块链技术进行跨境汇款的首次尝试。<br> &emsp;&emsp;国外银行业整体上来看，对区块链技术是持积极态度的，有“币”和无“币”的应用都在尝试，也在着力用区块链技术对传统金融行业中存在的一些弊端进行改革。</p>
+<h2 id="二、国内银行的区块链应用"><a href="#二、国内银行的区块链应用" class="headerlink" title="二、国内银行的区块链应用"></a>二、国内银行的区块链应用</h2><p> &emsp;&emsp;国内银行业较早的区块链应用当属邮政储蓄银行在 2016 年通过 Fabric Hyperledger（超级账本）在资产管理业务中实现的多方信息交互，即资产管理方、投资管理方、托管方之间通过区块链平台连接，通过智能合约提高指令执行速度，从而改善了原来各方之间靠邮件、电话进行指令交互的低效局面。之后，国内银行纷纷尝试各类应用。</p>
+<h3 id="（一）工行"><a href="#（一）工行" class="headerlink" title="（一）工行"></a>（一）工行</h3><p> &emsp;&emsp;2017 年初，工行参与了央行数字货币的发行和基于区块链的数字票据交易平台的研究工作；同年 3 月，工行完成基于区块链技术的金融产品交易平台原型系统建设，在其平台上为客户提供点对点的金融资产转移和交易服务；同年 5 月，工行的区块链与生物识别实验室启动与贵州省的脱贫攻坚基金区块链管理平台，在贵州省政府的支持下，工商银行与贵州省贵民集团合作，通过银行金融服务链和政府扶贫资金行政审批链的跨链整合与信息互信，以区块链技术的“交易溯源、不可篡改”实现了扶贫资金的“透明使用”、“精准投放”和“高效管理”。<br> &emsp;&emsp;2018 年 11 月 20 日，工行成功发放首笔数字信用凭据融资。工行联合核心企业及第三方供应链金融服务平台，利用区块链技术，将核心企业与各层级供应商间的采购资金流与贸易流集成到区块联盟平台上，相当于核心企业用数据交换信用评级。供应链上任意一个持有应收款数字凭据的供应商均可在线向工商银行提出融资申请，申请指令经工商银行智慧信贷平台批准后，贷款可瞬间到达企业账户，有效缓解了处于产业链末端、实力较弱企业的资金压力。<br> &emsp;&emsp;2019 年 5 月，雄安新区管委会正式启动运行的雄安征迁安置资金管理区块链平台，将应用工行区块链技术，以实现征迁原始档案和资金穿透式拨付的全流程链上管理。</p>
+<h3 id="（二）农行"><a href="#（二）农行" class="headerlink" title="（二）农行"></a>（二）农行</h3><p> &emsp;&emsp;2017 年 8 月，农行与趣链科技合作，推出基于区块链的涉农互联网电商融资系统——“e 链贷”。该产品利用区块链技术向电商供应链的法人客户提供完整电商融资服务，以解决长期以来涉农信贷业务的信息不对称、管理成本高等难题。农行还基于区块链技术构建了掌银客户数字积分体系（简称“小豆”），以各类权益激励客户更多地体验掌银重点功能和服务。据统计，至 2018 年 8 月，“小豆乐园”上线一年之际，累计参与客户超过 1300 万。<br> &emsp;&emsp;2018 年，农行推出了应用区块链技术的企业年金项目，通过把企业年金业务全流程信息上链，实现业务各参与方之间信息共享，提升数据处理效率。通过构建可信联盟链，增强了交易可信度，缩短了处理时间，由原来 12 天缩短为 3 天。<br> &emsp;&emsp;农行也参与到了雄安区块链“战团”之中，与雄安集团合作开发区块链电子票据系统，支持该集团在区块链资金管理平台推行电子银行承兑汇票业务，用于新区项目整个链条的支付结算，从而实现招投标管理、支付结算、供应链融资融信等全面金融服务创新。</p>
+<h3 id="（三）中行"><a href="#（三）中行" class="headerlink" title="（三）中行"></a>（三）中行</h3><p> &emsp;&emsp;2017 年 1 月，中行曾上线区块链电子钱包（BOCwallet）的 iOS 版本，该钱包地址由 32 位的数字 + 英文字母组成，用户可绑定个人在该行的银行卡号；同年 6 月，中行与腾讯合作，测试区块链技术；同年 8 月，中行与 SWIFT（环球银行金融电信协会）组织和全球银行一起加入 SWIFT gpi 区块链概念验证，以促进金融在 SWIFT gpi 项目中的应用。<br>雄安新区可谓是中国区块链技术应用集中地，中行在其中参与了新区土地征迁系统、区块链资金管理系统、建设者信息管理平台、雄安集团智慧森林系统、雄安集团招投标系统等开发建设工作。截至 2019 年 3 月，已累计参与 10 万亩苗景兼用林、容东截洪渠、截洪渠景观林等新区招投标项目，累计营销 47 家总包及分包开户上链，为中标企业提供直连服务。</p>
+<h3 id="（四）建行"><a href="#（四）建行" class="headerlink" title="（四）建行"></a>（四）建行</h3><p> &emsp;&emsp;2017 年 9 月，建行与 IBM 合作，在香港开发和推出了一个“区块链银行保险平台”，为其零售和商业银行业务提供服务；同年 11 月，建行完成首笔区块链福费廷交易，金额近 1 亿元，成为国内首家将区块链技术应用于国际保理业务的银行。该系统逐渐演化为区块链贸易金融平台，实现国内信用证、福费廷、国际保理、物流金融等产品端到端全流程在线处理。截至 2018 年末，该平台累计交易金额超过 2000 亿元。<br> &emsp;&emsp;2018 年，建行率先成立雄安新区服务建设小组，并在当地建立中国建设银行河北雄安分行。2018 年 2 月上线的雄安区块链租房应用，建行就是其中参与者之一。<br> &emsp;&emsp;2018 年 9 月 29 日，建行搭建了“区块链金融精准扶贫平台”，积极推进金融科技和精准扶贫相结合，实现对精准扶贫资金的透明使用、精准投放和高效监管。<br> &emsp;&emsp;除上述外，建行在慈善业务、药品溯源等领域也上线了一些区块链项目。</p>
+<h3 id="（五）平安"><a href="#（五）平安" class="headerlink" title="（五）平安"></a>（五）平安</h3><p> &emsp;&emsp;2016 年，马明哲在平安集团执委大会宣布，区块链将是平安未来进军的重点。同年 4 月，中国平安正式加入 R3 分布式分类账联盟，也是中国首家加入该联盟的金融机构。<br> &emsp;&emsp;2018 年 2 月，平安发布面向金融行业区块链解决方案的壹账链 BaaS 平台。<br> &emsp;&emsp;2018 年 9 月，由平安提供技术支持的香港金管局的融资平台项目正式上线。</p>
+<h3 id="（六）微众银行"><a href="#（六）微众银行" class="headerlink" title="（六）微众银行"></a>（六）微众银行</h3><p> &emsp;&emsp;2016 年 5 月，微众银行联合 20 多家机构发起成立了金融区块链合作联盟（深圳），着力推动区块链技术研发和应用落地。其后，金链盟成员扩充至六大类行业、近 100 家机构。同年 8 月，微众银行联合上海华瑞银行推出微粒贷机构间对账平台，这也是国内首个在生产环境中运行的银行业联盟链应用场景。<br> &emsp;&emsp;2017 年，微众银行联合万向区块链和矩阵元共同研发了区块链开源平台（BCOS），并联合金链盟的多家成员机构共同研发了 BCOS 的金融分支版本—FISCO BCOS，两大平台现已完全开源，促进了国内开源区块链生态圈的形成。<br> &emsp;&emsp;2017 年 10 月，微众银行联合广州仲裁委、杭州亦笔科技三方基于区块链技术搭建了“仲裁链”，通过区块链分布式存储、加密算法等特点，为司法提供真实透明、可追溯的实时保全数据。2018 年 2 月，广州仲裁委基于“仲裁链“出具了业内首个裁决书，标志着区块链应用在司法领域的真正落地并完成价值验证。2018 年 11 月 12 日，FISCO BCOS 在 2018 年新加坡金融科技节，完成了其首次海外亮相。<br> &emsp;&emsp;微众银行此后将工作重点放在区块链平台建设和生态培育上，并于 2019 年 3 月 20 日，FISCO BCOS 开源社区正式发布 FISCO BCOS 2.0。<br> &emsp;&emsp;由于篇幅有限，本文不再一一介绍各银行的区块链应用。</p>
+<h2 id="三、关于银行在区块链应用方面的思考"><a href="#三、关于银行在区块链应用方面的思考" class="headerlink" title="三、关于银行在区块链应用方面的思考"></a>三、关于银行在区块链应用方面的思考</h2><p> &emsp;&emsp;区块链技术最初被“中本聪”实现时，的确是以对现有金融体系的变革为目标，这一点无论在其白皮书还是比特币创世区块中都有体现，但是十年来，区块链技术依然是争议不断，而且在落地应用方面鲜有突破。<br> &emsp;&emsp;银行目前的区块链应用，除了国外少数银行有涉及数字货币的应用外，国内外大部分银行对区块链技术的应用都是无“币”类应用，只是在突出区块链防篡改的数据加固能力，这是当前区块链应用方面最主要的问题，因为区块链技术并不具备强大的数据存储能力，比特币、以太坊、Libra 践行的都是尽可能最小化数据的设计方式。尽管应用者可能“财大气粗”，不在乎资源方面的消耗，但这并不是优秀设计该遵循的原则。<br> &emsp;&emsp;笔者认为，银行的区块链应用应该多思考以下几点：</p>
+<h3 id="（一）没有充分利用“信任”"><a href="#（一）没有充分利用“信任”" class="headerlink" title="（一）没有充分利用“信任”"></a>（一）没有充分利用“信任”</h3><p> &emsp;&emsp;区块链不是理想的数据存储方式，更不是支持大数据应用的理想方式。区块链起到数据加固作用，链上数据不易篡改，但是，银行采用区块链技术后并没有因此而简化业务流程、改变产品形态。比如，供应链、贸易融资领域都是当前区块链应用热点，信用证、福费廷、保理等业务都已经可以上链，但是链上的金融产品没有多少变化，只是改变了业务信息的传递方式。<br> &emsp;&emsp;如果深入思考，其实供应链、贸易金融等领域金融产品众多，并非是因为客户需求多，客户只用一个需求——资金。不同的金融产品实际上是为了解决不同场景下的信息不对称问题。既然公认区块链可以解决数据篡改问题，提供“信任”，那么，金融产品的种类应该明显减少，因为没有那么多的信息不对称能要解决了，例如，为什么还需要信用证这个产品呢？<br> &emsp;&emsp;众多的供应链金融产品也许可以整合成一种基于金融产品关键数据和智能合约的区块链金融产品，以对应客户其实从未变化过的核心诉求。金融产品关键数据包括：甲乙方唯一标识、合约唯一标识、金额、期限、价格、担保方唯一标识、担保率、抵质押品唯一标识、抵质押价值、有无追索权、合约状态。<br> &emsp;&emsp;银行只需要采用一种简单的产品合约，关联仓单等金融产品用到的链上信息，发生融资、偿还等行为时则修改链上信息与参与方的关系，这样的方式，智能合约也更容易实现。<br> &emsp;&emsp;从区块链的视角看，不应该有复杂的金融产品，只会有复杂的信息关系，而区块链的价值正是证明了这种复杂信息关系的真实性。</p>
+<h3 id="（二）重平台，轻连接"><a href="#（二）重平台，轻连接" class="headerlink" title="（二）重平台，轻连接"></a>（二）重平台，轻连接</h3><p> &emsp;&emsp;自联盟链诞生后，企业级的区块链应用基本上都是联盟链形态，而联盟链形态无一不代表“厚重”的平台化应用，节点的部署通常选择云化部署，节点实际上分布在同一片“云”上。这种方式的区块链应用不仅造成信息的集中，实际上也代表了治理的集中，除了少数有投票、记账权的节点外，其他节点仅相当于客户端，是被少数节点代理参加网络，其实已经不再具备“自由”权力，这也是联盟链通常被人批评之处，这样的平台与传统分布式系统很难说有本质差别。<br> &emsp;&emsp;银行的应用，无论是购买平台还是自建平台，都是采用联盟链形态，而且基本不具备向公链扩展的能力，所以一直缺少“杀手级”应用。Libra 提出的技术白皮书则均衡了这个问题，采用联盟链的方式建立初期网络，但是采用能够以低成本建立节点的方式，支持向公链形态扩展和大规模用户部署。所以，Libra 才能够“一石激起千层浪”。<br> &emsp;&emsp;Libra 引起的广泛关注再次说明了“连接”的重要性，只有逐渐脱离“平台”设计，让区块链易部署，才能让其成为更加广泛的金融基础设施，也能尽快推动标准的发展和互操作、跨链等关键技术的发展。</p>
+<h3 id="（三）价值网络的探索不够"><a href="#（三）价值网络的探索不够" class="headerlink" title="（三）价值网络的探索不够"></a>（三）价值网络的探索不够</h3><p> &emsp;&emsp;目前国内银行普遍缺少在这方面的探索，随着央行将加快法定数字货币研究工作列为 2019 年下半年重点工作之一，CBDC 呼之欲出，国内银行在价值网络应用方面需要做好充分的准备。<br>货币形态的变化对经济生活影响极大，而数字货币可编程的特点对于当前本就在技术、客户线上场景构建和驾驭方面具有优势的互联网科技公司而言，不次于获得了一个新的“加速器”。<br> &emsp;&emsp;综上，当区块链技术逐渐“正向”发展的时候，所有银行都应当认真思考这一技术形态代表的可能性，尽管最后让银行“惊讶”的未必就是区块链，但是技术创新的颠覆性，已经被区块链这种在技术领域远称不上复杂的实现方式再次演示出来。</p>
+<blockquote>
+<p>作者简介：<br>付晓岩，《企业级业务架构设计：方法论与实践》作者，原国有大行资深业务架构师，负责业务架构设计、项目管理，热衷新技术探索与实践，具有丰富的银行业务经验和企业级项目业务架构设计经验，曾主导客户关系、金融市场、同业、资管、养老金等多个领域核心系统的业务架构设计，现就职于建信金融科技有限责任公司。公众号：晓谈岩说。</p>
+</blockquote>
+
+      </div>
+      
+      
+        <br>
+        
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-01-01T23:12:04+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>updated at Jan 1, 2020</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%AC%E4%B8%80%E6%9C%9F/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>第一期</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>区块链</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/12/31/1-FintechBanquet2-BlockChain/&title=金融科技盛宴（二）：银行的区块链应用 | Fjrcu-Tech&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2019/12/31/1-FintechBanquet2-BlockChain/&title=金融科技盛宴（二）：银行的区块链应用 | Fjrcu-Tech&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/12/31/1-FintechBanquet2-BlockChain/&title=金融科技盛宴（二）：银行的区块链应用 | Fjrcu-Tech&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+      
+      
+          <div class="prev-next">
+              
+                  <section class="prev">
+                      <span class="art-item-left">
+                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
+                          <h4>
+                              <a href="/2019/12/31/1-FintechBanquet3-CloudComputing/" rel="prev" title="金融科技盛宴（三）：银行的云计算应用">
+                                
+                                    金融科技盛宴（三）：银行的云计算应用
+                                
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/%E7%AC%AC%E4%B8%80%E6%9C%9F/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 第一期</a> <a class="tag" href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 云计算</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/2019/12/31/1-FintechBanquet1-OpenBank/" rel="prev" title="金融科技盛宴（一）：开放银行到底都开放了什么？">
+                                  
+                                      金融科技盛宴（一）：开放银行到底都开放了什么？
+                                  
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/%E7%AC%AC%E4%B8%80%E6%9C%9F/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 第一期</a> <a class="tag" href="/tags/%E5%BC%80%E5%8F%91%E9%93%B6%E8%A1%8C/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 开发银行</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+          </div>
+      
+    </section>
+  </article>
+
+
+
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '金融科技盛宴（二）：银行的区块链应用',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+      
+        
+          
+          
+            
+              <section class='widget author'>
+  <div class='content pure'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='http://q3f5rvvfx.bkt.clouddn.com/fjrcu-logo.png'/>
+      </div>
+    
+    
+      <div class='text'>
+        
+        
+        
+        
+      </div>
+    
+    
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;TOC</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、国外银行的区块链应用"><span class="toc-text">一、国外银行的区块链应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、国内银行的区块链应用"><span class="toc-text">二、国内银行的区块链应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（一）工行"><span class="toc-text">（一）工行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（二）农行"><span class="toc-text">（二）农行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（三）中行"><span class="toc-text">（三）中行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（四）建行"><span class="toc-text">（四）建行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（五）平安"><span class="toc-text">（五）平安</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（六）微众银行"><span class="toc-text">（六）微众银行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、关于银行在区块链应用方面的思考"><span class="toc-text">三、关于银行在区块链应用方面的思考</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（一）没有充分利用“信任”"><span class="toc-text">（一）没有充分利用“信任”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（二）重平台，轻连接"><span class="toc-text">（二）重平台，轻连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（三）价值网络的探索不够"><span class="toc-text">（三）价值网络的探索不够</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget grid'>
+  
+<header class='pure'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content pure'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/archives/" href="/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="archives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          文章归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于小站
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget category'>
+    
+<header class='pure'>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Categories</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/categories/"
+    title="categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/%E6%A1%88%E4%BE%8B/" href="/categories/%E6%A1%88%E4%BE%8B/"><div class='name'>案例</div><div class='badge'>(6)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E7%A7%91%E6%99%AE/" href="/categories/%E7%A7%91%E6%99%AE/"><div class='name'>科普</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E7%BB%8F%E9%AA%8C/" href="/categories/%E7%BB%8F%E9%AA%8C/"><div class='name'>经验</div><div class='badge'>(2)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget tagcloud'>
+    
+<header class='pure'>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Hot Tags</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/tags/"
+    title="tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <a href="/tags/%E4%B8%9A%E5%8A%A1%E4%B8%AD%E5%8F%B0/" style="font-size: 14px; color: #999">业务中台</a> <a href="/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/" style="font-size: 14px; color: #999">云计算</a> <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 14px; color: #999">人工智能</a> <a href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" style="font-size: 14px; color: #999">区块链</a> <a href="/tags/%E5%BC%80%E5%8F%91%E9%93%B6%E8%A1%8C/" style="font-size: 14px; color: #999">开发银行</a> <a href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/" style="font-size: 14px; color: #999">物联网</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/" style="font-size: 14px; color: #999">移动应用</a> <a href="/tags/%E7%AC%AC%E4%B8%80%E6%9C%9F/" style="font-size: 24px; color: #555">第一期</a> <a href="/tags/%E7%BB%8F%E8%90%A5%E7%94%9F%E6%80%81/" style="font-size: 14px; color: #999">经营生态</a> <a href="/tags/%E8%AF%AF%E5%8C%BA%E9%A3%8E%E9%99%A9/" style="font-size: 14px; color: #999">误区风险</a>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="mailto:fjrcu_tech@163.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://github.com/fjrcu-tech"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  <br>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+</div>
+  <div>
+    Use
+    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
+    as theme
+    
+      , 
+      total visits
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      times
+    
+    . 
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+  
+<script src="/js/search.js"></script>
+
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
